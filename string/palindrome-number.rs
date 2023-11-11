@@ -3,9 +3,9 @@ impl Solution1 {
         if x < 0 {
             return false;
         }
-        let (mut y, mut z): (i32,i32) = (x,0);
+        let (mut y, mut z): (i32, i32) = (x, 0);
         while y > 0 {
-            z = z*10 + y%10;
+            z = z * 10 + y % 10;
             y /= 10;
         }
         return x == z;
